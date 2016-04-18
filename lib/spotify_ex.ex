@@ -17,5 +17,4 @@ defmodule Spotify do
       {"Content-Type", "application/x-www-form-urlencoded"}
     ]
   end
-
 end

@@ -32,7 +32,7 @@ In ```/config```, create ```config/secret.exs``` and ```config/spotify.exs``` fi
 
 use Mix.Config
 
-config :spotify_ex, client_id: "<YOUR CLIENT ID>"
+config :spotify_ex, client_id: "<YOUR CLIENT ID>",
                     secret_key: "<YOUR SECRET KEY>"
 ```
 
@@ -49,8 +49,8 @@ config :spotify_ex, user_id: "<YOUR SPOTIFY USER ID>",
 Add the secret file to your .gitignore,  and import it in config.exs
 
 ```elixir
-import "config.secret.exs"
-import "spotify.secret.exs"
+import "secret.exs"
+import "spotify.exs"
 ```
 
 ## Authorization Flow
